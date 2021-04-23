@@ -1,0 +1,118 @@
+body {
+    font-family: 'PT Serif', "Exo 2", sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+  }
+
+  html{
+      scroll-behavior: smooth;
+  }
+
+  .hero {
+    height: 100vh;
+    color: white;
+    font-size: 20px;
+  }
+
+li {
+    list-style: none;
+}
+
+a  {
+    text-decoration: none;
+}
+
+  /* responsive navbar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+}
+
+    .burger {
+        display: none;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #b90808;
+    }
+
+    .navMenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navItem {
+        margin-left: 5rem;
+    }
+    
+    .navItem a{
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #475569;
+    }
+    
+    .navItem a:hover{
+        color: #f81717;
+        border-bottom: 1px solid ;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .navMenu {
+            position: fixed;
+            left: -100%;
+            top: 2rem;
+            flex-direction: column;
+            background-color: #fff;
+            width: 93%;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow:
+                0 10px 27px rgba(0, 0, 0, 0.05);
+        }
+    
+        .navMenu.active {
+            left: 0;
+        }
+    
+        .navItem {
+            margin: 2.5rem 0;
+        }
+    
+        .burger {
+            display: block;
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+        }
+
+        .burger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+    
+        .burger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+    
+        .burger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    
+    }
+
+
+  .about {
+      height: 100vh;
+      background-color: darkslategray;
+  }
