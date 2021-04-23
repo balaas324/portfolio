@@ -128,6 +128,10 @@ a  {
       background-color: darkslategray;
   }
 
+  .about-info {
+      width: 60%;
+  }
+
 
   .projects {
     height: 100vh;
@@ -166,8 +170,6 @@ a  {
         position: relative;
         width: 100%;
         height: 100%;
-        border-radius: 8px;
-
         text-align: center;
         transition: transform 1s;
         transform-style: preserve-3d;
@@ -183,13 +185,13 @@ a  {
         height: 100%;
         -webkit-backface-visibility: hidden; /* Safari */
         backface-visibility: hidden;
+        border: 1px solid hotpink;
       }
 
       .flip-card-front {
         background-color: #bbb;
         color: black;
         border-radius: 8px;
-
       }
 
       .flip-card-back {
