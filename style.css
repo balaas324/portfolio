@@ -129,7 +129,7 @@ a  {
   }
 
   .about-info {
-      width: 60%;
+      width: 70%;
   }
 
 
@@ -163,7 +163,8 @@ a  {
         height: 200px;
         border-radius: 8px;
         perspective: 1000px; 
-        margin: 10px;
+        margin: 30px;
+        padding: 0px;
     }
 
     .flip-card-inner {
@@ -186,6 +187,8 @@ a  {
         -webkit-backface-visibility: hidden; /* Safari */
         backface-visibility: hidden;
         border: 1px solid hotpink;
+        margin: 0;
+        padding: 0;
       }
 
       .flip-card-front {
