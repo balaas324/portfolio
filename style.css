@@ -73,9 +73,10 @@ a  {
         cursor: pointer;
     }
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 768px) {
         .navMenu {
             position: fixed;
+            z-index: 99;
             left: -125%;
             top: 39px;
             flex-direction: column;
@@ -99,6 +100,7 @@ a  {
         .burger {
             display: block;
             position: fixed;
+            z-index: 99;
             padding: 5px 10px;
             top: 20px;
             right: 20px;
@@ -143,7 +145,7 @@ a  {
         flex-direction: row;
     }
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 768px) {
         .container {
             display: flex;
             flex-direction: column;
@@ -155,7 +157,6 @@ a  {
         background-color: transparent;
         width: 300px;
         height: 200px;
-        border: 1px solid #f1f1f1;
         border-radius: 8px;
         perspective: 1000px; 
         margin: 10px;
