@@ -4,16 +4,22 @@ body {
     color: whitesmoke;
     margin: 0;
     padding: 0;
+    height: 100%;
   }
 
   html{
       scroll-behavior: smooth;
+      height: 100%;
   }
 
   .hero {
     height: 100vh;
     color: white;
     font-size: 20px;
+  }
+
+  .mainName {
+      color: whitesmoke;
   }
 
 li {
@@ -30,6 +36,7 @@ a  {
         justify-content: space-between;
         align-items: center;
         padding: 0rem 1.5rem;
+        height: 70px;
 }
 
     .burger {
@@ -59,16 +66,16 @@ a  {
     .navItem a{
         font-size: 1.6rem;
         font-weight: 400;
-        color: #475569;
+        color: #a3a3a3;
     }
 
     a.active {
-        color: #f81717;
+        color: #ff0000;
         border-bottom: 1px solid ;
     }
     
     .navItem a:hover{
-        color: #f81717;
+        color: #ff0000;
         border-bottom: 1px solid ;
         cursor: pointer;
     }
@@ -80,13 +87,14 @@ a  {
             left: -125%;
             top: 39px;
             flex-direction: column;
-            background-color: #fff;
+            background-color: rgb(53, 53, 53);
+            color: whitesmoke;
             width: 90%;
             border-radius: 10px;
             text-align: center;
             transition: 0.3s;
             box-shadow:
-                0 10px 27px rgba(0, 0, 0, 0.05);
+                0 10px 27px rgba(252, 251, 251, 0.159);
         }
     
         .navMenu.active {
@@ -122,6 +130,44 @@ a  {
     
     }
 
+.parallax {
+    background-image: url("./img/mrrobot.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 50%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container-box {
+        width: 75%;
+        height: 75%;
+    }
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    padding: 20px;
+}
+
+.social svg:hover {
+    fill: rgb(9, 116, 255);
+}
 
   .about {
       height: 100vh;
@@ -159,8 +205,8 @@ a  {
 /* project cards flip */  
     .flip-card {
         background-color: transparent;
-        width: 300px;
-        height: 200px;
+        width: 400px;
+        height: 300px;
         border-radius: 8px;
         perspective: 1000px; 
         margin: 30px;
@@ -186,7 +232,6 @@ a  {
         height: 100%;
         -webkit-backface-visibility: hidden; /* Safari */
         backface-visibility: hidden;
-        border: 1px solid hotpink;
         margin: 0;
         padding: 0;
       }
@@ -202,4 +247,14 @@ a  {
         color: white;
         border-radius: 8px;
         transform: rotateY(180deg);
+      }
+
+      a.demo {
+
+          border: 1px solid whitesmoke;
+      }
+
+      a.demo:hover{
+          background-color: whitesmoke;
+          color: teal;
       }
