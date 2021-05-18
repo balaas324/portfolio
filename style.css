@@ -172,6 +172,12 @@ a.active {
     }
 }
 
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+
 .my-name {
     display: flex;
     justify-content: center;
@@ -193,7 +199,7 @@ a.active {
 }
 
 .social svg:hover {
-    fill: rgb(9, 116, 255);
+    fill: #ff0000;
 }
 
 .skills {
@@ -258,7 +264,8 @@ a.active {
 
     .container {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     @media only screen and (max-width: 768px) {
@@ -272,7 +279,7 @@ a.active {
 
     .flip-card {
         background-color: transparent;
-        width: 400px;
+        width: 500px;
         height: 300px;
         border-radius: 8px;
         perspective: 1000px; 
@@ -307,21 +314,28 @@ a.active {
         background-color: #bbb;
         color: black;
         border-radius: 8px;
+        
       }
 
       .flip-card-back {
-        background-color: dodgerblue;
+        background-color: #ff0000;
         color: white;
         border-radius: 8px;
         transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
 
       a.demo {
 
           border: 1px solid whitesmoke;
+          color: whitesmoke;
+          padding: 10px;
       }
 
       a.demo:hover{
           background-color: whitesmoke;
-          color: teal;
+          color: red;
       }
