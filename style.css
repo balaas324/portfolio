@@ -178,6 +178,8 @@ a.active {
     }
   }
 
+  /* home intro */
+
 .my-name {
     display: flex;
     justify-content: center;
@@ -202,10 +204,36 @@ a.active {
     fill: #ff0000;
 }
 
+/* skills */
+
 .skills {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-container {
+    padding: 50px;
+    height: 60%;
+    width: 60%;
+    background-color: rgba(60, 60, 60, 0.576);
+    border-radius: 20px;
     
 }
+
+.skill-logo {
+    height: 70px;
+    padding: 15px;
+    transition: transform .4s;
+}
+
+.skill-logo:hover {
+    transform: scale(1.5);
+}
+
+
+/* about me */
 
   .about {
       height: 100vh;
@@ -225,15 +253,15 @@ a.active {
 
   .about-info {
       width: 40%;
-      padding: 30px;
+      padding: 20px;
       flex: 50%;
   }
 
   .headshot {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    border: 1px solid rgb(245, 7, 7);
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: px solid rgb(245, 7, 7);
     margin: 20px;
 }
 
@@ -245,11 +273,11 @@ a.active {
 
   .about-info h2 {
       font-size: 30px;
-      padding: 30px;
+      padding: 20px;
   }
 
   
-
+/* projects */
 
   .projects {
     height: 100vh;
@@ -266,6 +294,13 @@ a.active {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .project-img {
+        width:350px;
+        height:220px;
+        margin: 10px;
+        border-radius: 10px;
     }
 
     @media only screen and (max-width: 768px) {
@@ -313,14 +348,14 @@ a.active {
       .flip-card-front {
         background-color: #bbb;
         color: black;
-        border-radius: 8px;
+        border-radius: 0px 20px;
         
       }
 
       .flip-card-back {
         background-color: #ff0000;
         color: white;
-        border-radius: 8px;
+        border-radius: 20px 0px;
         transform: rotateY(180deg);
         display: flex;
         flex-direction: column;
