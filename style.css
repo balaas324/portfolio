@@ -96,7 +96,7 @@ a.active {
         .navMenu {
             position: fixed;
             z-index: 99;
-            left: -125%;
+            right: -125%;
             top: 59px;
             flex-direction: column;
             background-color: rgb(53, 53, 53);
@@ -110,7 +110,7 @@ a.active {
         }
     
         .navMenu.active {
-            left: 15px;
+            right: 15px;
         }
     
         .navItem {
