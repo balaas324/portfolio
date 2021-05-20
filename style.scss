@@ -1,0 +1,456 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'PT Serif', "Exo 2", sans-serif;
+    background-color: black;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  html{
+      scroll-behavior: smooth;
+      height: 100%;
+  }
+
+  .hero {
+    height: 100vh;
+    color: white;
+    font-size: 20px;
+  }
+
+  .mainName {
+    color: white;
+    border-bottom: 1px solid ;
+  }
+
+li {
+    list-style: none;
+}
+
+a  {
+    text-decoration: none;
+}
+
+  /* responsive navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0rem 1rem;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 10;
+}
+
+.burger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #b90808;
+}
+
+.navMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 100px;
+    padding: 0;
+}
+
+.navItem {
+    margin-left: 2rem;
+}
+
+.navItem a{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #a3a3a3;
+}
+
+a.active {
+    color: #ff0000;
+    border-bottom: 1px solid ;
+}
+
+.navItem a:hover{
+    color: #ff0000;
+    border-bottom: 1px solid ;
+    cursor: pointer;
+}
+
+    @media only screen and (max-width: 768px) {
+        .navMenu {
+            position: fixed;
+            z-index: 99;
+            right: -125%;
+            top: 59px;
+            flex-direction: column;
+            background-color: rgb(53, 53, 53);
+            color: whitesmoke;
+            width: 90%;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow:
+                0 10px 27px rgba(252, 251, 251, 0.159);
+        }
+    
+        .navMenu.active {
+            right: 15px;
+        }
+    
+        .navItem {
+            margin: 2.5rem 0;
+        }
+    
+        .burger {
+            display: block;
+            position: fixed;
+            z-index: 99;
+            padding: 5px 10px;
+            top: 20px;
+            right: 20px;
+            background-color: rgb(104, 100, 100);
+            border-radius: 8px;
+        }
+
+        .burger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+    
+        .burger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+    
+        .burger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    
+    }
+
+
+    /* parallax background */
+
+.parallax {
+    background-image: url("./img/mrrobot.jpg");
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 50%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container-box {
+        width: 75%;
+        height: 75%;
+    }
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+
+  /* home intro */
+
+.my-name {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    font-size: 50px;
+}
+
+.intro {
+    margin: 30px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    padding: 20px;
+}
+
+.social svg:hover {
+    fill: #ff0000;
+}
+
+/* skills */
+
+.skills {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-container {
+    padding: 50px;
+    height: 60%;
+    width: 60%;
+    background-color: rgba(60, 60, 60, 0.576);
+    border-radius: 20px;
+    
+}
+
+.skill-logo {
+    height: 70px;
+    padding: 15px;
+    transition: transform .4s;
+}
+
+.skill-logo:hover {
+    transform: scale(1.5);
+}
+
+/* skill bar */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.bar-container {
+  width: 100%; 
+  height: 20px;
+  background-color: #ddd; 
+}
+
+.bar-skills {
+    height: 20px;
+  text-align: right; 
+  padding-top: 0px; 
+  padding-bottom: 10px; 
+  color: white; 
+}
+
+.html {width: 90%; background-color: #808080;} 
+.css {width: 80%; background-color: #808080;} 
+.js {width: 65%; background-color: #808080;}
+.php {width: 60%; background-color: #808080;} 
+
+/* about me */
+
+  .about {
+      height: 100vh;
+      background-color: rgb(55, 65, 65);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .about-container {
+      background-color: rgba(22, 22, 22, 0.898);
+      border-radius: 20px;
+      width: 80%;
+      height: 80%;
+      display: flex;
+  }
+
+  .about-info {
+      width: 40%;
+      padding: 20px;
+      flex: 50%;
+  }
+
+  .headshot {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 1px solid rgb(245, 7, 7);
+    margin: 20px;
+}
+
+.about-info.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+}
+
+.download-button {
+    border: 1px solid red;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.download-button:hover {
+    .download-icon {
+        fill: black;
+    }
+    p{
+        color: black;
+    }
+    background-color: red;
+}
+
+.download-icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    fill: red;
+}
+
+
+.download-button p {
+    margin: 10px;
+    color: red;
+}
+
+  .about-info h2 {
+      font-size: 30px;
+      padding: 20px;
+  }
+
+  
+/* projects */
+
+  .projects {
+    height: 100vh;
+    
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-img {
+        width:350px;
+        height:220px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+/* project cards flip */  
+
+    .flip-card {
+        background-color: transparent;
+        width: 500px;
+        height: 300px;
+        border-radius: 8px;
+        perspective: 1000px; 
+        margin: 30px;
+        padding: 0px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+        margin: 0;
+        padding: 0;
+      }
+
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+        border-radius: 0px 20px;
+        
+      }
+
+      .flip-card-back {
+        background-color: #ff0000;
+        color: black;
+        border-radius: 20px 0px;
+        transform: rotateY(180deg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .project-buttons {
+          display: flex;
+          flex-direction: row;
+      }
+
+      a.demo {
+        img.live{
+            width: 45px;
+            height: 45px;
+            
+        }
+          border: 1px solid black;
+          border-radius: 10px;
+          color: black;
+          padding: 20px 10px;
+          margin: 0px 10px;
+          width: 150px;
+          height: 70px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          
+      }
+
+      a.demo:hover {
+          svg {
+            fill: red;
+          }
+          img.live{
+              fill: red;
+          }
+          background-color: black;
+          color: red;
+      }
