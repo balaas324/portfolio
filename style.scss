@@ -94,6 +94,9 @@ a.active {
 }
 
     @media only screen and (max-width: 768px) {
+        .hero{
+            height: 150vh;
+        }
         .navMenu {
             position: fixed;
             z-index: 99;
@@ -198,6 +201,7 @@ a.active {
 }
 
 .social {
+    margin: 30px 0px;
     padding: 20px;
 }
 
@@ -215,17 +219,21 @@ a.active {
 }
 
 .skill-container {
-    padding: 50px;
-    height: 60%;
+    padding: 15px 50px;
+    height: 80%;
     width: 60%;
     background-color: rgba(60, 60, 60, 0.576);
     border-radius: 20px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+
 .skill-logo {
-    height: 70px;
-    padding: 15px;
+    height: 50px;
+    padding: 0px 10px;
+    margin: 30px 0px;
     transition: transform .4s;
 }
 
@@ -233,14 +241,24 @@ a.active {
     transform: scale(1.5);
 }
 
+.soft-skills {
+    padding: 0px 0px 0px;
+}
+
+.p-skills {
+    border-bottom: 1px solid white;
+    margin: 0px 0px 20px;
+}
+
 /* skill bar */
 * {box-sizing:border-box}
 
 /* Container for skill bars */
 .bar-container {
-  width: 100%; 
-  height: 20px;
-  background-color: #ddd; 
+    
+    width: 100%; 
+    height: 20px;
+    background-color: #ddd; 
 }
 
 .bar-skills {
@@ -255,6 +273,24 @@ a.active {
 .css {width: 80%; background-color: #808080;} 
 .js {width: 65%; background-color: #808080;}
 .php {width: 60%; background-color: #808080;} 
+
+@media only screen and (max-width: 768px) {
+    .skills {
+        height: 170vh;
+    }
+    
+    .skill-container {
+        height: 80%;
+        width: 90%;
+        
+    }
+    
+    
+    .skill-logo {
+        height: 40px;
+        margin: 20px 0px;
+    }
+}
 
 /* about me */
 
@@ -280,6 +316,10 @@ a.active {
       flex: 50%;
   }
 
+  .about-info p{
+      margin: 10px 0px;
+  }
+
   .headshot {
     height: 200px;
     width: 200px;
@@ -293,7 +333,7 @@ a.active {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 35px;
+    padding: 45px;
 }
 
 .download-button {
@@ -332,12 +372,43 @@ a.active {
       padding: 20px;
   }
 
+  @media only screen and (max-width: 768px) {
+    .about {
+        height: 170vh;
+    }
+
+    .about-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+  
+    .about-info {
+        width: 100%;
+        padding: 10px;
+        flex: 0%;
+    }
+
+    .headshot {
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+    }
+
+    .about-info.left {
+        padding: 20px;
+    }
+
+    .about-info h2 {
+        padding: 10px;
+    }
+}
+
   
 /* projects */
 
   .projects {
     height: 100vh;
-    
     }
 
     .info {
@@ -359,12 +430,7 @@ a.active {
         border-radius: 10px;
     }
 
-    @media only screen and (max-width: 768px) {
-        .container {
-            display: flex;
-            flex-direction: column;
-        }
-    }
+    
 
 /* project cards flip */  
 
@@ -454,3 +520,59 @@ a.active {
           background-color: black;
           color: red;
       }
+
+      @media only screen and (max-width: 768px) {
+        .projects {
+            height: 170vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flip-card {
+            width: 380px;
+            height: 300px;
+            
+        }
+    }
+
+      /* contact */
+
+.contact{
+    height: 100vh;
+    background-color: rgb(55, 65, 65);
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.contact-container {
+    margin: 50px;
+}
+
+.form-control {
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    :focus{
+        border: none;
+    }
+  }
+  
+  .submit {
+    width: 180px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+  }
+  
+  .submit:hover {
+    background-color: rgb(192, 190, 190);
+  }

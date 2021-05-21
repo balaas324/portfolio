@@ -24,7 +24,7 @@
                 <li class="navItem"><a class="navLink" href="#about">about</a></li>
                 <li class="navItem"><a class="navLink" href="#skills">skills</a></li>
                 <li class="navItem"><a class="navLink" href="#projects">projects</a></li>
-                <li class="navItem"><a class="navLink" href="#connect">connect</a></li>
+                <li class="navItem"><a class="navLink" href="#contact">connect</a></li>
             </ul>
             <div class="burger">
                 <span class="bar"></span>
@@ -89,7 +89,7 @@
     <section class="skills" id="skills">
       <div class="skill-container">
         <div class="tech-skills">
-          <p>tech skills: </p>
+          <p class="p-skills">tech skills: </p>
           <img src="./img/logo-javascript.svg" loading="lazy" alt="javascript" class="skill-logo">
           <img src="./img/HTML5_logo_and_wordmark.svg" loading="lazy" alt="html5" class="skill-logo">
           <img src="./img/sass-1.svg" loading="lazy" alt="sass" class="skill-logo">
@@ -100,22 +100,23 @@
           <img src="./img/npm.svg" loading="lazy" alt="npm" class="skill-logo">
         </div>
         <div class="soft-skills">
-          <p>HTML</p>
+          <p class="p-skills">soft skills: </p>
+          <p>Team work</p>
           <div class="bar-container">
             <div class="bar-skills html">90%</div>
           </div>
 
-          <p>CSS</p>
+          <p>Organisation</p>
           <div class="bar-container">
             <div class="bar-skills css">80%</div>
           </div>
 
-          <p>JavaScript</p>
+          <p>Communication</p>
           <div class="bar-container">
             <div class="bar-skills js">65%</div>
           </div>
 
-          <p>PHP</p>
+          <p>Management</p>
           <div class="bar-container">
             <div class="bar-skills php">60%</div>
           </div>
@@ -206,19 +207,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img src="img_avatar.png" alt="Avatar" style="width:30px;height:30px;">
-                        <h3>prject no 2</h3>
-                      </div>
-                      <div class="flip-card-back">
-                        <h1>John Doe</h1>
-                        <p>bazinga</p>
-                        <p>still nope</p>
-                      </div>
-                    </div>
-                  </div>
+                 
                   <div class="flip-card">
                     <div class="flip-card-inner">
                       <div class="flip-card-front">
@@ -233,8 +222,48 @@
                   </div>
             </div>
         </div>  
-        
     </section> 
+
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <h2>contact me</h2>
+        <form
+          class="contactForm"
+          target="_blank"
+          action="https://formsubmit.co/balaas324@gmail.com"
+          method="POST"
+        >
+          <div>
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <textarea
+            placeholder="Your Message"
+            class="form-control"
+            name="message"
+            rows="10"
+            required
+          ></textarea>
+          <div>
+            <button type="submit" class="submit">send email</button>
+          </div>
+        </form>
+      </div>
+     </section>
 
     
     <script src="src.js"></script>
