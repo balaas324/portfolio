@@ -329,7 +329,7 @@ a.active {
 
 @media only screen and (max-width: 768px) {
   .skills {
-    height: 170vh;
+    height: 150vh;
   }
   .skill-container {
     height: 80%;
@@ -448,7 +448,7 @@ a.active {
 
 @media only screen and (max-width: 768px) {
   .about {
-    height: 170vh;
+    height: 140vh;
   }
   .about-container {
     width: 90%;
@@ -482,7 +482,7 @@ a.active {
 
 /* projects */
 .projects {
-  height: 100vh;
+  height: 150vh;
 }
 
 .info {
@@ -637,7 +637,7 @@ a.demo:hover img.live {
 
 @media only screen and (max-width: 768px) {
   .projects {
-    height: 170vh;
+    height: 140vh;
   }
   .container {
     display: -webkit-box;
