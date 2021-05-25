@@ -269,10 +269,12 @@ a.active {
   color: white; 
 }
 
-.html {width: 90%; background-color: #808080;} 
-.css {width: 80%; background-color: #808080;} 
-.js {width: 65%; background-color: #808080;}
-.php {width: 60%; background-color: #808080;} 
+$backgroundcolor: #808080;
+
+.teamplayer {width: 90%; background-color: $backgroundcolor;} 
+.problem {width: 80%; background-color: $backgroundcolor;} 
+.patience {width: 90%; background-color: $backgroundcolor;}
+.communication {width: 70%; background-color: $backgroundcolor;} 
 
 @media only screen and (max-width: 768px) {
     .skills {
