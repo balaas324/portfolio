@@ -164,7 +164,7 @@ a.active {
 
 .container-box {
     background-color: rgba(0, 0, 0, 0.75);
-    width: 50%;
+    width: 60%;
     height: 70%;
     border-radius: 10px;
 }
@@ -176,7 +176,7 @@ a.active {
     }
 }
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 1023px) {
     .parallax {
       background-attachment: scroll;
     }
@@ -187,12 +187,13 @@ a.active {
 .my-name {
     display: flex;
     justify-content: center;
-    margin: 30px;
+    margin: 20px;
     font-size: 50px;
 }
 
 .intro {
-    margin: 30px;
+    margin: 40px;
+    font-size: 20px;
 }
 
 .socials {
@@ -212,7 +213,7 @@ a.active {
 /* skills */
 
 .skills {
-    height: 100vh;
+    height: 130vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -439,7 +440,7 @@ $backgroundcolor: #808080;
 
     .flip-card {
         background-color: transparent;
-        width: 500px;
+        width: 450px;
         height: 300px;
         border-radius: 8px;
         perspective: 1000px; 
