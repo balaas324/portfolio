@@ -247,7 +247,7 @@ a.active {
 .skill-container {
   padding: 15px 50px;
   height: 80%;
-  width: 60%;
+  width: 70%;
   background-color: rgba(60, 60, 60, 0.576);
   border-radius: 20px;
   display: -webkit-box;
@@ -359,7 +359,7 @@ a.active {
 .about-container {
   background-color: rgba(22, 22, 22, 0.898);
   border-radius: 20px;
-  width: 80%;
+  width: 90%;
   height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -461,6 +461,7 @@ a.active {
             flex-direction: column-reverse;
   }
   .about-info {
+    height: 100%;
     width: 100%;
     padding: 10px;
     -webkit-box-flex: 0%;
