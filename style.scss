@@ -412,7 +412,7 @@ $backgroundcolor: #808080;
 /* projects */
 
   .projects {
-    height: 200vh;
+    height: 150vh;
     }
 
     .info {
@@ -527,7 +527,7 @@ $backgroundcolor: #808080;
 
       @media only screen and (max-width: 768px) {
         .projects {
-            height: 140vh;
+            height: 240vh;
         }
         .container {
             display: flex;
