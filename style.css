@@ -484,7 +484,7 @@ a.active {
 
 /* projects */
 .projects {
-  height: 150vh;
+  height: 140vh;
 }
 
 .info {
@@ -639,7 +639,7 @@ a.demo:hover img.live {
 
 @media only screen and (max-width: 768px) {
   .projects {
-    height: 140vh;
+    height: 250vh;
   }
   .container {
     display: -webkit-box;
